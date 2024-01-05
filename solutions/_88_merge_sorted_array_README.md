@@ -61,6 +61,11 @@ the beginning.
 
 We need to initialize `i` at index of number before the first zero, that is `m-1` and `j` in the end of the second array.
 
+Then we would use this logic: we fill ending elements of 1st array with bigger numbers until all arrays' elements are 
+used. 
+* When the 1st array is used completely (i < 0), we stop comparing elements and just fill the 1st array cells with 
+leftovers from 2nd array. 
+* When the 2nd array is used completely, then all elements are at their needed place
 
 ```
         int i = m - 1;
